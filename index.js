@@ -24,7 +24,6 @@ function projectGenerator() {
         fs.mkdir(`${response.project}/spec`)
         return response;
     }).then((response)=>{
-        console.log(response)
         fs.writeFile(`${response.project}/spec/index.test.js`,'');
         console.log('Project created successfully')
     }).catch((err)=>{console.log(err)});
